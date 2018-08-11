@@ -6,15 +6,34 @@
 
 body {
   padding-top: 70px;
-  background: #f8f5f0 !important;
+  color: white;
+  font-family: 'Palanquin', 'Helvetica';
+}
+
+blockquote > p {
+  font-style: italic;
+}
+
+.bg-blue {
+  background: #7DC9CF !important;
+  color: white;
+}
+
+.bg-white {
+  background: white !important;
+  color: #333;
+}
+
+.bg-green {
+  background: #B7D852 !important;
+  color: white;
 }
  
 .section-header { 
-  font-family: 'Bitter', serif;
+  font-family: 'Palanquin Dark', 'Helvetica';
   line-height: 36px;
   font-size: 30px;
   padding: 5px;
-  color: #3a3a3a;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 1em;
@@ -24,6 +43,44 @@ body {
 
 .logo-navbar {
   height: 54px;
+}
+
+.top-container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .top-container .info {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    padding: 1em;
+    width: 500px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media (max-width: 768px) {
+  .top-container .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1em;
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.top-container > img {
+  min-height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.top-container .info img {
+  height: 70%;
+  width: 70%;
 }
 
 .top-message {
