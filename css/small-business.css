@@ -4,10 +4,18 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-small-business/blob/master/LICENSE)
  */
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   padding-top: 70px;
   color: white;
   font-family: 'Palanquin', 'Helvetica';
+}
+
+nav {
+  width: 100vw !important;
 }
 
 blockquote > p {
@@ -21,7 +29,7 @@ blockquote > p {
 
 .bg-white {
   background: white !important;
-  color: #333;
+  color: #343a40;
 }
 
 .bg-green {
@@ -49,6 +57,11 @@ blockquote > p {
   position: relative;
 }
 
+.top-mobile {
+  padding: 1em;
+  padding-top: 2em;
+}
+
 @media (min-width: 768px) {
   .top-container .info {
     position: absolute;
@@ -63,12 +76,13 @@ blockquote > p {
 
 @media (max-width: 768px) {
   .top-container .info {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
     padding: 1em;
     height: auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9); */
+    display: none;
   }
 }
 
