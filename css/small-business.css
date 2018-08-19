@@ -22,6 +22,17 @@ blockquote > p {
   font-style: italic;
 }
 
+a {
+  transition: background-color 0.5s ease;
+  color: white;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #ccc; 
+}
+
 .bg-blue {
   background: #7DC9CF !important;
   color: white;
@@ -36,7 +47,17 @@ blockquote > p {
   background: #B7D852 !important;
   color: white;
 }
+
+.bg-gray {
+  background: #343a40;
+  color: white;
+}
  
+.bg-light-gray {
+  background: #3c4249;
+  color: white;
+}
+
 .section-header { 
   font-family: 'Palanquin Dark', 'Helvetica';
   line-height: 36px;
@@ -47,10 +68,16 @@ blockquote > p {
   margin-top: 1em;
   margin-bottom: 1em;
   display: inline-block;
+  width: 100%;
+  text-align: center;
 }
 
 .logo-navbar {
-  height: 54px;
+  height: 36px;
+}
+
+.top {
+  margin-top: -24px;
 }
 
 .top-container {
@@ -59,7 +86,6 @@ blockquote > p {
 
 .top-mobile {
   padding: 1em;
-  padding-top: 2em;
 }
 
 @media (min-width: 768px) {
@@ -76,20 +102,16 @@ blockquote > p {
 
 @media (max-width: 768px) {
   .top-container .info {
-    /* position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 1em;
-    height: auto;
-    background: rgba(255, 255, 255, 0.9); */
     display: none;
   }
 }
 
 .top-container > img {
   min-height: 300px;
+  max-height: 500px;
   width: 100%;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .top-container .info img {
@@ -106,10 +128,6 @@ blockquote > p {
 p.mission {
   margin: 0;
   font-size: 2em;
-}
-
-.hue {
-  padding: 5em;
 }
 
 .image-block img {
