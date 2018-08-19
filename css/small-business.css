@@ -97,6 +97,7 @@ a:hover {
     width: 500px;
     height: auto;
     background: rgba(255, 255, 255, 0.9);
+    text-align: center;
   }
 }
 
@@ -115,8 +116,8 @@ a:hover {
 }
 
 .top-container .info img {
-  height: 70%;
-  width: 70%;
+  height: 80%;
+  width: 80%;
 }
 
 .top-message {
